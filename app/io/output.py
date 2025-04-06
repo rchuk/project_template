@@ -6,7 +6,7 @@ def write_console(text: str) -> None:
     Args:
         text (str): text to print to the console.
     """
-    pass
+    print(text)
 
 
 def write_file(text: str, path: str) -> None:
@@ -16,4 +16,4 @@ def write_file(text: str, path: str) -> None:
         text (str): text to be written to file.
         path(str): path of the file to be written to.
     """
-    pass
+    open(path, "w", encoding="utf-8").write(text)

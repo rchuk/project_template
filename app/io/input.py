@@ -7,7 +7,7 @@ def read_console() -> str:
     Return:
         str. text, entered by the user.
     """
-    pass
+    return input("Please enter your input: ")
 
 
 def read_file(path: str) -> str:
@@ -18,16 +18,16 @@ def read_file(path: str) -> str:
     Return:
         str: contents of the file.
     """
-    pass
+    return open(path, "r", encoding="utf-8").read()
 
 
 def read_file_pandas(path: str) -> pd.DataFrame:
     """
-    Reads contents of the file using pandas library.
+    Reads contents of the csv file using pandas library.
     Args:
         path(str): path to the file to be read.
 
     Returns:
         df(pandas.DataFrame): contents of the file parsed by pandas.
     """
-    pass
+    return pd.read_csv(path)
